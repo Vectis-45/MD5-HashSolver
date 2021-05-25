@@ -14,10 +14,11 @@ A bruteforce python MD5 hasher
 
  ## Planned  
  
+
  **Soon**
 
  - ~~Less resource intensive printing~~
  - GPU support
- - use input() to define hash instead of hardcoding
+ - ~~use input() to define hash instead of hardcoding~~
  - Unknown hash length solving 
 
