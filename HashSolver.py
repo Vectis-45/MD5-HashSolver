@@ -9,16 +9,20 @@ global end
 global str2hash
 global attempt
 
+# temp variable assignment
+fresult = "null"
+attempt = "0"
+
 # answer should be the MD5 hash you make- this one is "test"
-answer = "1158f5f8d240a731d28068742adea0fd"
+answer = "098f6bcd4621d373cade4e832627b4f6"
 hash = input("MD5 Hash: ")
-hashlength = int(input("Hash length: "))
+hashlength = int(input("Length of initial string: "))
 
 
 def premutation_count():
     count = 230843697339241380472092742683027581083278564571807941132288000000000000 / math.factorial(54 - hashlength)
 
-    print("POSSIBLE PREMUTATIONS: " + str(count))
+    print("POSSIBLE PREMUTATIONS: " + "{:,}".format(count))
     print("SOLVING...")
 
 
@@ -35,9 +39,8 @@ while fresult != answer:
     str2hash = random_char(hashlength)
     result = hashlib.md5(str2hash.encode())
     fresult = result.hexdigest()
-    attempt = attempt + 1
-
-while fresult == answer:
+    attempt = int(attempt) + 1
+else:
     end = time.time()
     elapsed = round(end - start, 2)
     hashrate2 = round(attempt / elapsed, 2)
