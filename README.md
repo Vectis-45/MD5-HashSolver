@@ -5,7 +5,8 @@ A bruteforce python MD5 hasher
 
  **Hash Solver**
  - Variable length hexadecimal string unhashing
- - Hashrate counter 
+ - Hashrate per second printing 
+ - Attempted Hashes
  
 
 **Hash Creator**
@@ -16,6 +17,7 @@ A bruteforce python MD5 hasher
 
  **Soon**
 
- - Less resource intensive printing
+ - ~~Less resource intensive printing~~
  - GPU support
+ - use input() to define hash instead of hardcoding
 
