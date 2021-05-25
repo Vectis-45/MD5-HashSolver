@@ -10,14 +10,14 @@ A bruteforce python MD5 hasher
  
 
 **Hash Creator**
- - Create variable length MD5 hash 
+ - Create variable length MD5 hash
 
  ## Planned  
  
-
  **Soon**
 
  - ~~Less resource intensive printing~~
  - GPU support
  - use input() to define hash instead of hardcoding
+ - Unknown hash length solving 
 
