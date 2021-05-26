@@ -19,6 +19,6 @@ A bruteforce python MD5 hasher
 
  - ~~Less resource intensive printing~~
  - GPU support
- - ~~use input() to define hash instead of hardcoding~~
+ - ~~use input() to define hash instead of hardcoding~~ (realized error with current implementation, not yet working
  - Unknown hash length solving 
 
