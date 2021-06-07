@@ -13,8 +13,7 @@ global attempt
 fresult = "null"
 attempt = "0"
 
-# answer should be the MD5 hash you make- this one is "test"
-answer = "098f6bcd4621d373cade4e832627b4f6"
+
 hash = input("MD5 Hash: ")
 hashlength = int(input("Length of initial string: "))
 
@@ -35,7 +34,7 @@ def random_char(y):
     return ''.join(random.choice(string.ascii_letters) for x in range(y))
 
 
-while fresult != answer:
+while fresult != hash:
     str2hash = random_char(hashlength)
     result = hashlib.md5(str2hash.encode())
     fresult = result.hexdigest()
